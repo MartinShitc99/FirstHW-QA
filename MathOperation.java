@@ -3,14 +3,14 @@ public class MathOperation {
         int sum = add( 10, 11);
         System.out.println("Результат прибавления: " + sum);
 
-        int sum1 = subtrack( 15, 7);
+        int sum1 = subtract( 15, 7);
         System.out.println("Результат вычетания: " + sum1);
 
         int sum2 = multiply( 3, 7);
-        System.out.println("Результат вычетания: " + sum2);
+        System.out.println("Результат умножения: " + sum2);
 
         double sum3 = divide( 42, 7);
-        System.out.println("Результат вычетания: " + sum3);
+        System.out.println("Результат деления: " + sum3);
 
 //        2.findMax
         int sum4 = findMax(10, 30);
@@ -53,13 +53,13 @@ public class MathOperation {
         System.out.println("Цельсии: " + sum13);
 
         //        10.FahrenheitToCelsius
-        double sum14 = FahrenheitToCelsius(27);
+        double sum14 = fahrenheitToCelsius(27);
         System.out.println("Фаренгейты: " + sum14);
     }
     public static int add(int x, int y) {
         return x + y;
     }
-    public static int subtrack(int x, int y) {
+    public static int subtract(int x, int y) {
         return x - y;
     }
     public static int multiply(int x, int y) {
@@ -104,23 +104,23 @@ public class MathOperation {
         return Math.sqrt(a * a + b * b);
     }
 
-    //        8.findHypotenuse
+    //        8.circleCircumference
     public static double circleCircumference(double radius) {
         return 2 * Math.PI * radius;
     }
 
-    //        9.findHypotenuse
+    //        9.celsiusToFahrenheit
     public static double calculatePercentage(double part, double total) {
         return (part / total) * 100;
     }
 
-    //        9.celsiusToFahrenheit
+//    10.celsiusToFahrenheit
     public static double celsiusToFahrenheit(double С) {
         return С * 9 / 5 + 32;
     }
 
-//    FahrenheitToCelsius
-    public static double FahrenheitToCelsius(double F) {
+//    10.fahrenheitToCelsius
+    public static double fahrenheitToCelsius(double F) {
         return (F - 32) * 5 / 9;
     }
 
